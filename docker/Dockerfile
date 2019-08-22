@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Trevor Pesout, tpesout@ucsc.edu
+MAINTAINER Marina Haukness, mhauknes@ucsc.edu
 
 ARG git_commit
 
@@ -19,7 +19,7 @@ RUN mkdir /opt/cmake && \
 
 # get marginPolish
 WORKDIR /opt
-RUN git clone https://github.com/UCSC-nanopore-cgl/MarginPolish.git && \
+RUN git clone https://github.com/mhaukness-ucsc/MarginPolish.git && \
     cd /opt/MarginPolish && \
     git fetch && \
     git checkout $git_commit && \
